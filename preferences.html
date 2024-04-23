@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard - SecureKey Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: SecureKey
+  * Template URL: #nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: MS.com
+  * License: #license/
+  ======================================================== -->
+  </head>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .passuser {
+      text-align: center;
+      color: #007bff;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .output-section {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+    font-size: 20px;
+    }
+
+    .output-section p {
+      margin-bottom: 5px;
+      position: relative;
+    }
+
+    .copy-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #007bff;
+    }
+  </style>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span class="d-none d-lg-block">SecureKey</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#">
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword" />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+  
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown">
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle" />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >K. Anderson</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+                <span>Web Designer</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html">
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html">
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html">
+                  <i class="bi bi-question-circle"></i>
+                  <span>Lock Now</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Vaults</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#">
+            <i class="bi bi-layout-text-window-reverse"></i><span>Tools</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="generator.html">
+                <i class="bi bi-circle"></i><span>Generator</span>
+              </a>
+            </li>
+            <li>
+              <a href="export.html">
+                <i class="bi bi-circle"></i><span>Export Vault</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="preferences.html">
+            <i class="bi bi-question-circle"></i>
+            <span>Preferences</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <i class="bi bi-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-register.html">
+            <i class="bi bi-card-list"></i>
+            <span>Register</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section dashboard ">
+        <div class="row">
+          <!-- Left side columns -->
+          <div class="col-lg-12">
+            <div class="container" style="max-width: none;">
+              <h3 class="mb-4">Preferances</h3><hr>
+              <p><strong>Customize your web vault experience</strong></p>
+              <div class="mb-3">
+                <label for="passwordType" class="mb-2">Vault Timeout:</label>
+                <select class="form-select" id="passwordType">
+                  <option value="password">Immediate</option>
+                  <option value="password">5min</option>
+                  <option value="password">15min</option>
+                  <option value="passphrase">30min</option>
+                </select>
+                <span style="font-size: 12px;">Chooes when your vault will take the vault timeout action.</span>
+              </div>
+
+              <p> <strong>Vault Timeout action</strong></p>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="usernameCheckbox">
+                <label class="form-check-label" for="usernameCheckbox">Lock</label><br>
+                <span style="font-size: 12px;">Master password or other unlock method is requeired to access your vault again.</span>
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="passwordCheckbox">
+                <label class="form-check-label" for="passwordCheckbox">Log out</label><br>
+                <span style="font-size: 12px;">Re-authenticatrion is required to access your vault again.</span>
+              </div>
+              
+              <div class="mb-3">
+                <label for="passwordType" class="mb-2">Language:</label>
+                <select class="form-select" id="passwordType">
+                  <option value="password">Hindi</option>
+                  <option value="passphrase">English</option>
+                </select>
+                <span style="font-size: 12px;">Change the language use by web vault.</span>
+              </div>
+              <button id="generateBtn" class="btn btn-primary">Save</button>
+           
+            </div>
+          </div>
+          <!-- End Left side columns -->
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SecureKey</span></strong
+        >. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        <!-- Purchase the pro version with working PHP/AJAX contact form: #nice-admin-bootstrap-admin-html-template/ -->
+        Designed by <a href="#">MS</a>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+ <!-- Password Generator  Script --> 
+ <script>
+  const generateBtn = document.getElementById('generateBtn');
+  const output = document.getElementById('output');
+  const usernameCheckbox = document.getElementById('usernameCheckbox');
+  const passwordCheckbox = document.getElementById('passwordCheckbox');
+  const lengthInput = document.getElementById('lengthInput');
+  const passwordType = document.getElementById('passwordType');
+
+  // Function to generate random username
+  function generateUsername() {
+    const adjectives = ['Happy', 'Silly', 'Funny', 'Clever', 'Brave', 'Shy', 'Crazy'];
+    const nouns = ['Cat', 'Dog', 'Bird', 'Elephant', 'Tiger', 'Lion', 'Bear'];
+    let username = '';
+    const length = parseInt(lengthInput.value);
+    while (username.length < length) {
+      const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+      const noun = nouns[Math.floor(Math.random() * nouns.length)];
+      username += adjective + noun;
+    }
+    return username.slice(0, length);
+  }
+
+  // Function to generate random password
+  function generatePassword() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+    let password = '';
+    const length = parseInt(lengthInput.value);
+    if (passwordType.value === 'password') {
+      while (password.length < length) {
+        password += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+    } else if (passwordType.value === 'passphrase') {
+      const words = ['apple', 'banana', 'cherry', 'orange', 'grape', 'kiwi', 'melon'];
+      while (password.split(' ').join('').length < length) {
+        password += words[Math.floor(Math.random() * words.length)] + ' ';
+      }
+    }
+    return password.trim().slice(0, length);
+  }
+
+  // Event listener for generate button
+  generateBtn.addEventListener('click', () => {
+    let result = '';
+    if (usernameCheckbox.checked) {
+      result += '<p>Username: ' + generateUsername() + '</p>';
+    }
+    if (passwordCheckbox.checked) {
+      result += '<p>Password: ' + generatePassword() + '</p>';
+    }
+    output.innerHTML = result;
+  });
+</script>
+ <!-- end -->
+  </body>
+</html>
+
